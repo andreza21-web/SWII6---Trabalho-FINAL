@@ -10,7 +10,7 @@ namespace TPFinal.Desktop.Service
 {
     internal class UsuarioService
     {
-        private const string URI = "http://localhost:60422/api/usuarios";
+        private const string URI = "https://localhost:7044/api/Usuario";
 
         public async Task<Usuario> GetUsuario(string id)
         {

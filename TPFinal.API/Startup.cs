@@ -23,12 +23,7 @@ namespace TPFinal.API
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddMvcOptions(options => options.EnableEndpointRouting = false);
             // Add configuration for DbContext
             // Use connection string from appsettings.json file
-            /*
-              services.AddDbContext<Context>(options =>
-              {
-                  options.UseSqlServer(Configuration["AppSettings:ConnectionString"]);
-              });
-           */
+            
             var connection = @"Server=(localdb)\mssqllocaldb;Database=TpFinal;Trusted_Connection=True;";
             //Server =(localdb)\mssqllocaldb;Database=AspCore_NovoDB;Trusted_Connection=True;";
 
